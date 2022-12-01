@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_Q"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="What is your favorite movie?"
@@ -18,10 +18,12 @@
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TInput_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TEinput_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Movie"
@@ -53,10 +55,10 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/button_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="All your favorite movies"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
