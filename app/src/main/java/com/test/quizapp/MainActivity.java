@@ -18,6 +18,10 @@ import com.test.quizapp.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,12 +48,19 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         Button button = (Button) findViewById(R.id.button_Submit);
         button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                R.id
+            public void onClick(View view) {
+                EditText txt;
+                txt = (EditText) findViewById(R.id.TEinput_1);
+                String input = txt.getText().toString();
+                /*Text view on fragment_second*/
+                TextView txt2;
+                txt2 = (TextView) findViewById(R.id.textview_second);
             }
         });
+
     }
 
     @Override
